@@ -1,0 +1,8 @@
+# Prevent access to sensitive files and directories
+<FilesMatch "^(\.env|\.git|secure_.*\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Optionally, to prevent browsing of directories
+Options -Indexes
