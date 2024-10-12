@@ -8,7 +8,7 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
 # Expose the port on which the secure app will run
-EXPOSE 9000
+EXPOSE 9080
 
 # Run Apache in the foreground
 CMD ["apache2-foreground"]
